@@ -123,7 +123,7 @@ export class ErrorHandler {
     console.error('Application Error:', errorInfo);
 
     // In production, you might want to send this to an error tracking service
-    if (process.env.NODE_ENV === 'production') {
+    if (import.meta.env.PROD) {
       // Example: Send to error tracking service
       // errorTrackingService.captureException(error, errorInfo);
     }
