@@ -1,5 +1,5 @@
 import React from 'react';
-import { Files, Upload, BarChart3, Settings, HardDrive, X } from 'lucide-react';
+import { Files, Upload, BarChart3, HardDrive, X } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
