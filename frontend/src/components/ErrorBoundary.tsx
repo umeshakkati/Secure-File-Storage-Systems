@@ -52,7 +52,7 @@ class ErrorBoundary extends Component<Props, State> {
                 We're sorry, but something unexpected happened. Please try refreshing the page or go back to the dashboard.
               </p>
 
-              {process.env.NODE_ENV === 'development' && this.state.error && (
+              {import.meta.env.DEV && this.state.error && (
                 <div className="mb-6 p-4 bg-gray-100 rounded-lg text-left">
                   <h3 className="text-sm font-medium text-gray-900 mb-2">Error Details:</h3>
                   <pre className="text-xs text-gray-700 overflow-auto">
